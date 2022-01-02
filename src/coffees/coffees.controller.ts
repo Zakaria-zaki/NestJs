@@ -20,7 +20,7 @@ export class CoffeesController {
   constructor(private readonly coffeesService: CoffeesService) {}
   @Get()
   findAll(@Query() paginationQuery: PaginationQueryDto) {
-    return this.coffeesService.finAll(paginationQuery);
+    return this.coffeesService.findAll(paginationQuery);
   }
 
   @Get(':id')
